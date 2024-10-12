@@ -1,0 +1,103 @@
+.projects-section {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 50px;
+  text-align: center;
+}
+
+.project-card {
+  background-color: #282c34;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  height: 500px; /* Fixed card height */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, border 0.3s, box-shadow 0.3s; /* Smooth transition */
+  border: 2px solid transparent; /* Initial transparent border */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  border: 2px solid #61dafb; /* Highlight with accent color border */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+.project-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto 20px; /* Center the image */
+  display: block;
+}
+
+.project-content {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 150px; /* Limit content area height */
+  scrollbar-width: thin; /* Firefox: Make the scrollbar thin */
+  scrollbar-color: #61dafb #282c34; /* Firefox: Color the scrollbar */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+.project-content::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+.project-content::-webkit-scrollbar-track {
+  background: #282c34; /* Track color */
+}
+
+.project-content::-webkit-scrollbar-thumb {
+  background-color: #61dafb; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #282c34; /* Border around scrollbar thumb */
+}
+
+h3 {
+  color: #61dafb; /* Accent color */
+  margin-top: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #61dafb; /* Accent color for arrows */
+}
+
+.slick-dots li button:before {
+  color: #61dafb; /* Dots color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .project-card {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project-content {
+    max-height: 80px; /* Adjust height for mobile */
+  }
+}

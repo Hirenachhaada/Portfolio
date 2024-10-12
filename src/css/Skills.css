@@ -1,0 +1,61 @@
+.skills-section {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+h2 {
+  color: #61dafb; /* Accent color */
+  margin-bottom: 30px;
+}
+
+.skill-card {
+  background-color: #282c34;
+  border-radius: 10px;
+  padding: 20px; /* Increase padding for a better look */
+  max-width: 125px; /* Set a fixed width for each card */
+  width: 100%; /* Allow card to take full width of the container */
+  margin: 0 5px; /* Reduced margin to prevent overlapping */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-end; /* Align items to the bottom of the card */
+  height: 150px; /* Fixed height for uniformity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.skill-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.logo {
+  max-width: 80px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 10px; /* Space between logo and text */
+  display: block; /* Ensure it's a block element for centering */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .skill-card {
+    max-width: 120px; /* Smaller width for tablets */
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    max-width: 100px; /* Smaller width for mobile */
+  }
+
+  .logo {
+    max-width: 50px; /* Adjust logo size for mobile */
+  }
+
+  .skill-card p {
+    font-size: 12px; /* Smaller text for mobile */
+  }
+}

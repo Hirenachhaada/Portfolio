@@ -1,0 +1,52 @@
+.experience-section {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: #61dafb; /* Accent color */
+  margin-bottom: 30px;
+}
+
+.experience-cards {
+  display: flex;
+  flex-direction: row; /* Align cards in a row */
+  justify-content: center; /* Center cards horizontally */
+  gap: 30px; /* Space between cards */
+  flex-wrap: wrap; /* Allow cards to wrap if needed */
+}
+
+.experience-card {
+  background-color: #282c34;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Fixed width for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.experience-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.company-logo {
+  max-width: 100px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 15px; /* Space between logo and text */
+}
+
+.role {
+  font-weight: bold; /* Make the role bold */
+}
+
+.duration {
+  font-style: italic; /* Italicize the duration */
+  color: #a9a9a9; /* Lighter color for duration */
+  margin-bottom: 10px; /* Space between duration and description */
+}
+
+.description {
+  text-align: left; /* Align description text to the left */
+}

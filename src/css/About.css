@@ -1,0 +1,47 @@
+.about-section {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 50px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 20%;
+  height: 10%;
+  border-radius: 50%;
+  border: 3px solid #61dafb;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+h2 {
+  color: #61dafb; /* Accent color */
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+  }
+
+  .about-text {
+    text-align: left;
+    margin-left: 10vw;
+  }
+}

@@ -1,0 +1,48 @@
+.achievements-section {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: #61dafb; /* Accent color */
+  margin-bottom: 30px;
+}
+
+.achievements-list {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.achievement-item {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  margin: 20px 5%; /* Space between items */
+}
+
+.achievement-item span {
+  margin-left: 10px; /* Space between icon and text */
+  font-size: 16px; /* Adjust font size for clarity */
+}
+
+/* Icon size */
+.achievement-item svg {
+  width: 24px; /* Set icon width */
+  height: 24px; /* Set icon height */
+  color: #61dafb; /* Icon color */
+}
+
+/* Link styles */
+.achievement-item a {
+  color: #61dafb; /* Set link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.achievement-item a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.achievement-item a:visited {
+  color: #61dafb; /* Maintain the same color for visited links */
+}

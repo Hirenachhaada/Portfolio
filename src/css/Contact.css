@@ -1,0 +1,34 @@
+.contact-section {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: #61dafb; /* Accent color */
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between icons */
+}
+
+.contact-info a {
+  color: #61dafb; /* Icon color */
+  font-size: 24px; /* Adjust icon size */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-info a:hover {
+  color: #4fb3e3; /* Change color on hover */
+  transform: scale(1.2); /* Enlarge the icon slightly on hover */
+}
+
+/* Optional: Add a box shadow on hover for a more dynamic effect */
+.contact-info a:hover {
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.5); /* Glow effect */
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0; /* Remove default margin for all elements */
+  padding: 0; /* Remove default padding for all elements */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+  background-color: #1e1e1e; /* Dark background for the body */
+  width: 100%; /* Full width */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align all sections */
+  text-align: center;
+  width: 100%; /* Ensure the App takes full width */
+}
+
+.App-header {
+  background-color: #282c34; /* Header background color */
+  padding: 20px; /* Padding around the header */
+  color: white; /* Header text color */
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Full width */
+}
+
+nav {
+  display: flex; /* Use flexbox for navigation */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center align navigation links */
+  margin-top: 10px; /* Space above navigation */
+}
+
+nav a {
+  margin: 10px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  color: white; /* Link color */
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+  text-decoration-thickness: 2px; /* Thickness of the underline */
+  text-decoration-color: blue; /* Color of the underline */
+  color: #4fb3e3; /* Change link color on hover */
+}
+
+section {
+  padding: 20px; /* Space inside each section */
+  width: 100%; /* Full width for responsiveness */
+  margin: 0 auto; /* Center the section */
+}
+
+h2 {
+  color: #61dafb; /* Section heading color */
+  margin: 20px 0; /* Space around headings */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav a {
+    margin: 5px; /* Reduce margin on smaller screens */
+  }
+
+  .App-header h1 {
+    font-size: 1.5em; /* Adjust header size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    margin: 2px; /* Further reduce margin on very small screens */
+    font-size: 0.9em; /* Smaller font size for mobile */
+  }
+
+  .App-header h1 {
+    font-size: 1.2em; /* Adjust header size for very small screens */
+  }
+}

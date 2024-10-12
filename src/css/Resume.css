@@ -1,0 +1,31 @@
+.resume-section {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: #61dafb; /* Accent color */
+  margin-bottom: 30px;
+}
+
+.resume-buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 20px; /* Space between buttons */
+}
+
+.resume-button {
+  background-color: #61dafb; /* Button background color */
+  color: #282c34; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.resume-button:hover {
+  background-color: #4fb3e3; /* Darker shade on hover */
+}
